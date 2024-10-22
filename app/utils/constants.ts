@@ -4,8 +4,8 @@ export const WORK_DIR_NAME = 'project';
 export const WORK_DIR = `/home/${WORK_DIR_NAME}`;
 export const MODIFICATIONS_TAG_NAME = 'bolt_file_modifications';
 export const MODEL_REGEX = /^\[Model: (.*?)\]\n\n/;
-export const DEFAULT_MODEL = 'claude-3-5-sonnet-20240620';
-export const DEFAULT_PROVIDER = 'Anthropic';
+export const DEFAULT_MODEL = 'mistral-large';
+export const DEFAULT_PROVIDER = 'Mistral';
 
 const staticModels: ModelInfo[] = [
   { name: 'claude-3-5-sonnet-20240620', label: 'Claude 3.5 Sonnet', provider: 'Anthropic' },
@@ -30,6 +30,15 @@ const staticModels: ModelInfo[] = [
   { name: 'gpt-4-turbo', label: 'GPT-4 Turbo', provider: 'OpenAI' },
   { name: 'gpt-4', label: 'GPT-4', provider: 'OpenAI' },
   { name: 'gpt-3.5-turbo', label: 'GPT-3.5 Turbo', provider: 'OpenAI' },
+  { name: 'open-mistral-7b', label: 'Mistral 7B', provider: 'Mistral' },
+  { name: 'open-mixtral-8x7b', label: 'Mistral 8x7B', provider: 'Mistral' },
+  { name: 'open-mixtral-8x22b', label: 'Mistral 8x22B', provider: 'Mistral' },
+  { name: 'open-codestral-mamba', label: 'Codestral Mamba', provider: 'Mistral' },
+  { name: 'open-mistral-nemo', label: 'Mistral Nemo', provider: 'Mistral' },
+  { name: 'ministral-8b-latest', label: 'Mistral 8B', provider: 'Mistral' },
+  { name: 'ministral-small-latest', label: 'Mistral Small', provider: 'Mistral' },
+  { name: 'codestral-latest', label: 'Codestral', provider: 'Mistral' },
+  { name: 'ministral-large-latest', label: 'Mistral Large Latest', provider: 'Mistral' },
 ];
 
 export let MODEL_LIST: ModelInfo[] = [...staticModels];
